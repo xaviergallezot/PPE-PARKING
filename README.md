@@ -25,8 +25,33 @@ Alors afficher numplace (il vous reste tant de temps avant de devoir lanvccer un
 Sinon afficher Vous n'avez pas encore reservé ? RESERVER
 Afficher l'historique de toute les reservation 
 liste d'attente si il est en fille d'attente
+Modification des données perso
 
+Pages Administrateur/ BACK OFFICE :
+Edition : Liste utilisateur/Liste place/Files d'attente.
+Consultation : Liste d'attente/Historique attribution place/
+Attribution : place 
 
+Page Liste :
+Affiche Nombres de places libres. 
+Nombre total de places
+
+debut de la creation de la BD
+nomprop
+Id_Util
+Nom_Util
+Prenom_Util
+Adre_Util
+CP_Util
+Tel
+Mel
+Pseudo_Util
+Mdp_Util
+Id_Admin
+Pseudo_Admin
+Mdp_Admin
+ 
+	
 
 
 
