@@ -1,8 +1,11 @@
 # PPE-PARKING
 PPE 2 2018 
 Bien le bonjour 
-Salut xavier
 
+Voici la liste des taches ainsi que la documentation nécessaire a la réalisation du PPE : 
+Mise en place de la repartition des taches(diagramme de Gant).
+Création du Github.
+Imagination de la mise en disposition du site (Charte Graphique, nombre de pages, css, visualisation du MCD, architecture du site, etc...)
 Créer la base de données
 Créer la forme du site Internet avec des planches (visuelle du site)
 Coder les differentes pages du site internet:
