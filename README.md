@@ -11,6 +11,11 @@ Créer la forme du site Internet avec des planches (visuelle du site)
 Coder les differentes pages du site internet:
 (Page : Acceuil, Connexion, Inscription, Liste)(Admin et utilisateur)
 
+Voici le fichier qui contient notre bases de donnée
+....
+
+
+Voici l'exemple d'architecure suivi pour notre application : 
 Page acceuil: 
 Bouton acceuil /connexion/ inscrption/Liste
 Photo du Parking 
