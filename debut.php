@@ -6,17 +6,16 @@
 		<link rel="stylesheet" type="text/css" href="cssForum2.css" />
 	</HEAD>
 	<BODY>
-		<h1 align=center >Bienvenue sur l'acceuil de notre sites de reservation de place <h1>
-		<?php
+		<h1 align=center >Bienvenue sur l'acceuil de notre site de reservation de place </h1>
+		
+	
+		<div align=center>
 		<ul id="menu">
-			<li><a href="INSCRIPTION.php">Inscription</a></li>
-			<li><a href="connexion.php">Connexion</a></li>	
+			<li><a href="inscriptionparking.php">Inscription</a></li>
+			<li><a href="connexionparking.php">Connexion</a></li>	
 			<li><a href="">Contact</a></li>
-
+		</div>
 		</ul>
-		?>
-		
-		
 		
 				
 		
