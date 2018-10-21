@@ -1,0 +1,74 @@
+#------------------------------------------------------------
+#        Script MySQL.
+#------------------------------------------------------------
+
+
+#------------------------------------------------------------
+# Table: UTILISATEUR
+#------------------------------------------------------------
+
+CREATE TABLE UTILISATEUR(
+        IDutil     Int NOT NULL ,
+        Droitutil  Smallint NOT NULL ,
+        nomutil    Varchar (20) NOT NULL ,
+        prenomutil Varchar (20) NOT NULL ,
+        Villeutil  Varchar (250) NOT NULL ,
+        CPultil    Int NOT NULL ,
+        MDPutil    Varchar (10) NOT NULL ,
+        MELutil    Varchar (50) NOT NULL
+	,CONSTRAINT UTILISATEUR_PK PRIMARY KEY (IDutil)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: PLACE
+#------------------------------------------------------------
+
+CREATE TABLE PLACE(
+        Numplace   Int NOT NULL ,
+        Dispoplace Bool NOT NULL
+	,CONSTRAINT PLACE_PK PRIMARY KEY (Numplace)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: DEMANDE
+#------------------------------------------------------------
+
+CREATE TABLE DEMANDE(
+        Numdemande  Int NOT NULL ,
+        Datedemande Date NOT NULL ,
+        Rangdemande Int NOT NULL ,
+        IDutil      Int NOT NULL
+	,CONSTRAINT DEMANDE_PK PRIMARY KEY (Numdemande)
+
+	,CONSTRAINT DEMANDE_UTILISATEUR_FK FOREIGN KEY (IDutil) REFERENCES UTILISATEUR(IDutil)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: DATE
+#------------------------------------------------------------
+
+CREATE TABLE DATE(
+        Date Date NOT NULL
+	,CONSTRAINT DATE_PK PRIMARY KEY (Date)
+)ENGINE=InnoDB;
+
+
+#------------------------------------------------------------
+# Table: ATTRIBUER
+#------------------------------------------------------------
+
+CREATE TABLE ATTRIBUER(
+        IDutil   Int NOT NULL ,
+        Numplace Int NOT NULL ,
+        Date     Date NOT NULL ,
+        Duree    Int NOT NULL
+	,CONSTRAINT ATTRIBUER_PK PRIMARY KEY (IDutil,Numplace,Date)
+
+	,CONSTRAINT ATTRIBUER_UTILISATEUR_FK FOREIGN KEY (IDutil) REFERENCES UTILISATEUR(IDutil)
+	,CONSTRAINT ATTRIBUER_PLACE0_FK FOREIGN KEY (Numplace) REFERENCES PLACE(Numplace)
+	,CONSTRAINT ATTRIBUER_DATE1_FK FOREIGN KEY (Date) REFERENCES DATE(Date)
+)ENGINE=InnoDB;
+
