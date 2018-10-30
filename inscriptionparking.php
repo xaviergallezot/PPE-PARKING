@@ -8,7 +8,7 @@
 	<BODY>
 		<h1 align=center >Dans cette page vous allez pouvoir saisir vos coordonnées pour vous inscrire.</h1>
 		<h2 align=center >
-		<form method="POST" action="inscriptionP.php">
+		<form method="POST" action="inscription.php">
 		<p> Mel :</p>
 		<input type="text" placeholder= "Mel" name="mel" required>
 		<p> Mot de Passe (10 caractères max):</p>
@@ -25,12 +25,17 @@
 		
 		<?php
 		include_once 'GESTIONBDD.php' ;
-		$mel=$_POST ['mel'] echo $mel;
 		$mdp=$_POST ['password'] echo $mdp ;
-		$verif=$_POST['verif'] echo $verif;
-		$ville=$_POST['ville'] echo $ville;
-		$CP=$_POST['CP'] echo $CP;
-		
+		$mel=$_POST['mel']  ;
+		$mdp=$_POST['password']  ;
+		$verif=$_POST['verif'] ;
+		$ville=$_POST['ville'] ;
+		$CP=$_POST['CP'] ;
+		echo $mel;
+		echo $mdp;
+		echo $verif;
+		echo $ville	;
+		echo $CP ;
 		?>
 		</br> </br>
 		<input type="submit"  value="S'incrire" required>
