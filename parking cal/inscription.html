@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<title> INSCRIPTION </title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div id="banner1">
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html">ACCUEIL</a></li>
+				<li><a href="inscription.html">INSCRIPTION</a></li>
+				<li><a href="connexion.html">CONNEXION</a></li>
+				<li><a href="liste.html">LISTE</a></li>
+			</ul>
+		</div>
+		<div id="banner2">
+			<p> Page d'inscription </p>
+		</div>
+		
+		<div id="contenuprincipal">
+		<img src="image/voiture.jpg"/>
+		
+		<br /><br />
+		<form method="POST" action="inscription.php">
+			<table>
+				<tr>
+					<td align="right">
+					<label for="pseudo">Pseudo :</label>
+					</td>
+					<td align="right">
+					<input type="text" placeholder="Entrez un pseudo" id ="pseudo" name="pseudo"
+					</td>
+				</tr>
+
+				<tr>
+					<td align="right">
+					<label for="mail">Mail :</label>
+					</td>
+					<td align="right">
+					<input type="email" placeholder="Entrez votre mail" id= "mail" name="mail"
+					</td>
+				</tr>
+				
+				<tr>
+					<td align="right">
+					<label for="mail2">Confirmation du mail:</label>
+					</td>
+					<td align="right">
+					<input type="email" placeholder="Entrez votre mail" id="mail2" name="mail2"
+					</td>
+				</tr>
+
+				<tr>
+					<td align="right">
+					<label for="motdepasse">Mot de passe:</label>
+					</td>
+					<td align="right">
+					<input type="password" placeholder="Entrez un mdp" id="motdepasse" name="motdepasse"
+					</td>
+				</tr>
+
+				<tr>
+					<td align="right">
+					<label for="motdepasse2">Retapez votre mot de passe</label>
+					</td>
+					<td align="right">
+					<input type="password" placeholder="Confirmez le mdp" id="motdepasse2" name="motdepasse2"
+					</td>
+				</tr>				
+				<tr>
+					<td></td>
+					<br />
+					<td> <input type="submit" name="forminscription" value="Je m'inscris" /></td>
+				</tr>
+			</table>
+		</form>
+		<?php
+		if(isset($erreur))
+		{
+			echo $erreur;
+		}
+		?>
+		
+		</div>
+		
+		<div id="footeur">
+		<p>INTHASAKUBOL Calvin</p>
+		</div>
+	</body>
+</html>
