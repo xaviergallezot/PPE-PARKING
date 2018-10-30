@@ -25,7 +25,6 @@
 		
 		<?php
 		include_once 'GESTIONBDD.php' ;
-		$mdp=$_POST ['password'] echo $mdp ;
 		$mel=$_POST['mel']  ;
 		$mdp=$_POST['password']  ;
 		$verif=$_POST['verif'] ;
