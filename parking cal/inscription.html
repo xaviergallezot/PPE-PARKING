@@ -19,12 +19,14 @@
 			<p> Page d'inscription </p>
 		</div>
 		
-		<div id="contenuprincipal">
-		<img src="image/voiture.jpg"/>
+		<!--<div id="contenuprincipal">
+		<img src="image/78.jpg"/>-->
 		
 		<br /><br />
+		<div id="tableauindicatif">
 		<form method="POST" action="inscription.php">
 			<table>
+				<tr> <td align="right"> Saisir </td> <td align="left">Informations</td></tr>
 				<tr>
 					<td align="right">
 					<label for="pseudo">Pseudo :</label>
@@ -63,17 +65,17 @@
 
 				<tr>
 					<td align="right">
-					<label for="motdepasse2">Retapez votre mot de passe</label>
+					<label for="motdepasse2">Confirmer mot de passe</label>
 					</td>
 					<td align="right">
 					<input type="password" placeholder="Confirmez le mdp" id="motdepasse2" name="motdepasse2"
 					</td>
 				</tr>				
-				<tr>
-					<td></td>
-					<br />
-					<td> <input type="submit" name="forminscription" value="Je m'inscris" /></td>
+				<tr>	
+						<td></td>
+						<td align="left"> <input type="submit" name="forminscription" value="Je m'inscris" /></td>
 				</tr>
+		</div>
 			</table>
 		</form>
 		<?php

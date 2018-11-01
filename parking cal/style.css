@@ -1,17 +1,20 @@
 body {
 	overflow-x: hidden;
 	margin: 0;
+	/*background-image:url(image/78.jpg);*/
+	/*background-repeat: no-repeat;*/
+	background-color : #72B381 ;
 }
 
 #banner1 {
 	display: block;
 	background-color: #315439;
-	height: 50px;
-	width: 100%;
+	height: 60px;
+	width: 1950px;
 }
 
 #banner1 h2 {
-	position: relative;
+	
 	font-weight: bold;
 	font-size: 30px;
 	top: 10px;
@@ -22,36 +25,47 @@ body {
 #menu {
 	min-width: 500px;
 	width: 100%;
-	height: 100px;
-	position: relative;
+	height: 100px ;
 	background-color: #72B381;
 }
 
 #menu ul {
 	float: left;
-	left: 50%;
+	left: 30%;
 	position: relative;
 	padding-top: 15px;
 	margin-left: -60px;
 }
 
 #menu ul li {
-	margin-left: 30px;
+	margin-left: 100px;
 	float: left;
 	list-style-type: none;
-	position: relative;
 	left: -50%;
+}
+#tableauindicatif {
+	border-radius : 40px;
+	height : 200px;
+	width: 370px;
+	background-color :#006C0B ;
+	margin-left :770px;
+	margin-top :50px ;
+	margin-right : 1000px ; 
+	position: relative ;
 }
 
 #menu ul li a {
 	padding-top: 10px;
+	padding-bottom : 10px ;
+	margin-bottom : 20px ;
 	text-align: center;
 	display: inline-block;
 	background-color: #315439;
-	height: 30px;
-	width: 100px;
+	height: 40px;
+	width: 150%;
 	color: black;
 	text-decoration: none;
+	border-radius : 30px ;
 	
 }
 
@@ -63,16 +77,16 @@ body {
 #banner2 {
 	display: block;
 	background-color: #315439;
-	height: 50px;
-	width: 100%;
+	height: 60px;
+	width: 1950px;
+	left : -50%;
 }
 
 #banner2 p {
-	position: relative;
-	font-size: 20px;
+	font-size: 40px;
 	top: 10px;
 	margin: 0;
-	text-align: center;
+	margin-left : 150px ;
 }
 
 #contenuprincipal {
